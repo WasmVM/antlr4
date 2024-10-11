@@ -43,7 +43,7 @@ LexerFileHeader(file, lexer, namedActions) ::= <<
 
 <namedActions.preinclude>
 
-#include "antlr4-runtime.h"
+#include \<antlr4-runtime.h>
 
 <namedActions.postinclude>
 
@@ -80,7 +80,7 @@ ParserFileHeader(file, parser, namedActions, contextSuperClass) ::= <<
 
 <namedActions.preinclude>
 
-#include "antlr4-runtime.h"
+#include \<antlr4-runtime.h>
 
 <namedActions.postinclude>
 
@@ -118,7 +118,7 @@ BaseListenerFileHeader(file, header, namedActions) ::= <<
 
 <namedActions.baselistenerpreinclude>
 
-#include "antlr4-runtime.h"
+#include \<antlr4-runtime.h>
 #include "<file.grammarName>Listener.h"
 
 <namedActions.baselistenerpostinclude>
@@ -180,7 +180,7 @@ ListenerFileHeader(file, header, namedActions) ::= <<
 
 <namedActions.listenerpreinclude>
 
-#include "antlr4-runtime.h"
+#include \<antlr4-runtime.h>
 #include "<file.parserName>.h"
 
 <namedActions.listenerpostinclude>
@@ -235,7 +235,7 @@ BaseVisitorFileHeader(file, header, namedActions) ::= <<
 
 <namedActions.basevisitorpreinclude>
 
-#include "antlr4-runtime.h"
+#include \<antlr4-runtime.h>
 #include "<file.grammarName>Visitor.h"
 
 <namedActions.basevisitorpostinclude>
@@ -293,7 +293,7 @@ VisitorFileHeader(file, header, namedActions) ::= <<
 
 <namedActions.visitorpreinclude>
 
-#include "antlr4-runtime.h"
+#include \<antlr4-runtime.h>
 #include "<file.parserName>.h"
 
 <namedActions.visitorpostinclude>
